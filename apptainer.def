@@ -1,0 +1,88 @@
+Bootstrap: docker
+From: python:3.13-slim-bookworm
+
+%post
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        libgdal-dev \
+        libgeos-dev \
+        libproj-dev \
+        libspatialite-dev \
+        libsqlite3-dev \
+        pkg-config \
+        curl \
+        ca-certificates \
+        git \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+    # Install uv
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    export PATH="/root/.local/bin:$PATH"
+
+    # Install Python dependencies using uv
+    # We install them into the system Python environment for the container
+    uv pip install --system --no-cache \
+        numpy \
+        pandas \
+        scipy \
+        matplotlib \
+        seaborn \
+        geopandas \
+        shapely \
+        rasterio \
+        pyproj \
+        folium \
+        contextily \
+        geopy \
+        mercantile \
+        xyzservices \
+        networkx \
+        mapclassify \
+        rtree \
+        pyogrio \
+        scikit-learn \
+        asttokens \
+        executing \
+        pure_eval \
+        stack_data \
+        click \
+        click-plugins \
+        cligj \
+        geographiclib \
+        branca \
+        jinja2 \
+        markupsafe \
+        requests \
+        urllib3 \
+        six \
+        python-dateutil \
+        pytz \
+        tzdata \
+        typing-extensions \
+        packaging \
+        charset-normalizer \
+        idna \
+        certifi \
+        importlib-metadata \
+        zipp \
+        decorator \
+        joblib \
+        threadpoolctl \
+        contourpy \
+        cycler \
+        fonttools \
+        kiwisolver \
+        pillow \
+        pyparsing
+
+%environment
+    export LC_ALL=C.UTF-8
+    export LANG=C.UTF-8
+
+%runscript
+    exec "$@"
+
+%help
+    Apptainer definition for Paper 007 reproduction.
+    Includes dependencies for "Inclusive Multimodal Routing: Who Gets Left Behind?".

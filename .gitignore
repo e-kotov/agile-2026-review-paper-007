@@ -1,0 +1,6 @@
+*.sif
+data/
+results/
+analysis_*.log
+*.p
+__pycache__/
