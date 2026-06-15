@@ -1,5 +1,17 @@
 # Reproduction of Paper 007: Inclusive Multimodal Routing: Who Gets Left Behind?
 
+> **Original submission title:** Inclusive Multimodal Routing: Who Gets Left Behind?
+
+Original paper citaiton:
+
+Gogousou, I., Canestrini, M., Alinaghi, N., and Giannopoulos, I.: Inclusive Multimodal Routing: How Behavioral Constraints Shape Accessibility, AGILE GIScience Ser., 7, 3, <https://doi.org/10.5194/agile-giss-7-3-2026>, 2026.
+
+Reproducibility report:
+
+Kotov, E. (2026). Reproducibility review of: Inclusive Multimodal Routing: How Behavioral Constraints Shape Accessibility. [https://doi.org/10.17605/OSF.IO/r2674](https://doi.org/10.17605/OSF.IO/r2674)
+
+
+
 This repository contains the reproduction artifacts for AGILE 2026 Paper 007.
 
 ## Structure

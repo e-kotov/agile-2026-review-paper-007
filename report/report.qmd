@@ -4,7 +4,7 @@ author: "Egor Kotov \\orcid{0000-0001-6690-5345}"
 date: "2026-03-15"
 format:
   pdf:
-    toc: true
+    toc: false
     number-sections: true
     papersize: a4
     header-includes: |
@@ -34,9 +34,28 @@ format:
 This report is part of the reproducibility review at the AGILE conference.
 For more information see [https://reproducible-agile.github.io/](https://reproducible-agile.github.io/).
 
-# Reviewed paper
+This document is published on OSF at [https://doi.org/10.17605/OSF.IO/r2674](https://doi.org/10.17605/OSF.IO/r2674).
 
-Gogousou, I., Canestrini, M., Alinaghi, N., & Giannopoulos, I. (2026). Inclusive Multimodal Routing: Who Gets Left Behind?. AGILE GIScience Series.
+To cite the report use:
+
+Kotov, E. (2026). Reproducibility review of: Inclusive Multimodal Routing: How Behavioral Constraints Shape Accessibility. [https://doi.org/10.17605/OSF.IO/r2674](https://doi.org/10.17605/OSF.IO/r2674)
+
+**Reviewed paper:**
+
+Gogousou, I., Canestrini, M., Alinaghi, N., and Giannopoulos, I.: Inclusive Multimodal Routing: How Behavioral Constraints Shape Accessibility, AGILE GIScience Ser., 7, 3, <https://doi.org/10.5194/agile-giss-7-3-2026>, 2026.
+
+| | |
+|---|---|
+| **Submission Title** | Inclusive Multimodal Routing: Who Gets Left Behind? |
+| **Post Review Title** | Inclusive Multimodal Routing: How Behavioral Constraints Shape Accessibility |
+| **Authors** | Gogousou, I.; Canestrini, M.; Alinaghi, N.; Giannopoulos, I. |
+| **Ref. Paper** | <https://doi.org/10.5194/agile-giss-7-3-2026> |
+| **Reproducibility Reviewer** | Egor Kotov (\orcid{0000-0001-6690-5345}) |
+| **Review Repository** | <https://github.com/e-kotov/agile-2026-review-paper-007> |
+
+
+
+\tableofcontents
 
 # Summary
 
